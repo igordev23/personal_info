@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Igor Silva Santos - Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-10 px-6 text-center shadow-lg">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide drop-shadow-lg">
+                Francisco Igor Silva Santos
+            </h1>
+            <p class="mt-3 text-lg sm:text-xl font-medium text-gray-200">
+                Desenvolvedor de Software | Automação | Tecnologia & Inovação
+            </p>
+        </div>
+    </header>
+    
+    
+    <section class="max-w-5xl mx-auto p-6">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center md:items-start">
+            
+            <!-- Espaço para a foto (Responsivo) -->
+            <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center mb-6 md:mb-0 md:mr-8">
+                <img src="assets/perfil.jpg" alt="Foto de Francisco Igor" class="w-full h-full object-cover">
+            </div>
+    
+            <!-- Texto sobre você -->
+            <div class="text-gray-300 text-center md:text-left">
+                <h2 class="text-3xl font-semibold border-b-2 border-gray-600 pb-2 text-white">Sobre Mim</h2>
+                <p class="mt-4 leading-relaxed">
+                    Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por tecnologia e inovação. Minha experiência abrange desenvolvimento de software, bancos de dados e automação de processos, sempre buscando soluções eficientes e otimizadas.
+                </p>
+                <p class="mt-4 font-semibold text-lg text-indigo-400">Minhas principais habilidades:</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-200">
+                    <li><strong>Linguagens de Programação:</strong> Python, JavaScript, C# (em desenvolvimento).</li>
+                    <li><strong>Desenvolvimento Web:</strong> HTML, CSS, React.</li>
+                    <li><strong>Banco de Dados:</strong> PostgreSQL, SQL Server.</li>
+                    <li><strong>Modelagem de Sistemas:</strong> UML, análise orientada a objetos.</li>
+                    <li><strong>Automação e Chatbots:</strong> Criação de bots para redes sociais e WhatsApp.</li>
+                </ul>
+                <p class="mt-4">
+                    Atualmente, desenvolvo projetos que unem tecnologia e automação, proporcionando soluções inovadoras para usuários e empresas. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e expandir meu conhecimento.
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+    <section class="max-w-6xl mx-auto p-6 mt-6">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center">Projetos</h2>
+            
+            <!-- Grade Responsiva -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">Chat Code</h3>
+
+                    <div class="carousel">
+                        <div><img src="assets/chatcode1.png" alt="Chat Code 1" class="rounded-lg"></div>
+                        <div><img src="assets/chatcode2.png" alt="Chat Code 2" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Chat de bate-papo online para programadores.</p>
+                    <p class="descricao-completa hidden">O ChatCode é uma plataforma web de bate-papo online para programadores onde os usuários podem conversar, compartilhar ideias e colaborar em tempo real. O diferencial é a presença de um bot com Inteligência Artificial integrado ao chat, capaz de ajudar na resolução de dúvidas e até mesmo de executar códigos JavaScript ou TypeScript diretamente no chat, tornando a experiência mais dinâmica e educativa, ideal para programadores iniciantes.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="https://chatcode-frontend.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+                
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">Cardápio Online</h3>
+                    <div class="carousel">
+                        <div><img src="assets/cardapio1.png" alt="Cardápio 1" class="rounded-lg"></div>
+                        <div><img src="assets/cardapio2.png" alt="Cardápio 2" class="rounded-lg"></div>
+                        <div><img src="assets/cardapio3.png" alt="Cardápio 3" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Cardápio online de pizzaria com carrinho e pedido via WhatsApp.</p>
+                    <p class="descricao-completa hidden">O Cardápio Online de Pizzaria é uma plataforma web que permite aos usuários selecionar seus itens de pedido (pizzas, bebidas, acompanhamentos) de forma prática e intuitiva, com a opção de finalizar o pedido e ser redirecionado automaticamente para o WhatsApp para concluir a compra. Ideal para quem deseja uma experiência de pedido rápida e sem complicação, diretamente com o atendimento da pizzaria.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="https://pizzaria-modelo.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+                
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">Jogo Web de Enigmas</h3>
+                    <div class="carousel">
+                        <div><img src="assets/enigma1.png" alt="Jogo Web 1" class="rounded-lg"></div>
+                        <div><img src="assets/enigma2.png" alt="Jogo Web 2" class="rounded-lg"></div>
+                        <div><img src="assets/enigma3.png" alt="Jogo Web 3" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Jogo de resolução de enigmas.</p>
+                    <p class="descricao-completa hidden">O Jogo de Enigmas é uma plataforma web onde os usuários podem criar e compartilhar enigmas para que outros jogadores tentem resolvê-los. Perfeito para brincadeiras de caça ao tesouro ao ar livre, o jogo permite que os jogadores sigam pistas e resolvam enigmas para alcançar uma chave que os levará à próxima pista ou ao "tesouro" final.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="https://tesouro.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">Bot IA</h3>
+                    <div class="carousel">
+                        <div><img src="assets/bot1.png" alt="Bot IA 1" class="rounded-lg"></div>
+                        <div><img src="assets/bot2.png" alt="Bot IA 2" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Bot com voz e inteligência artificial.</p>
+                    <p class="descricao-completa hidden">O ComoBot é um assistente virtual baseado em Inteligência Artificial que reconhece comandos de voz do usuário e responde em áudio em tempo real. Com uma interface intuitiva, o usuário pode simplesmente clicar e falar, permitindo interações rápidas e eficientes.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="https://cosmo-bot-axey.onrender.com" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">GeoCollet</h3>
+                    <div class="carousel">
+                        <div><img src="assets/geocollet1.jpg" alt="GeoCollet 1" class="rounded-lg"></div>
+                        <div><img src="assets/geocollet2.jpg" alt="GeoCollet 2" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Aplicativo Android para coleta de dados.</p>
+                    <p class="descricao-completa hidden">O GeoCollect é um aplicativo Android desenvolvido para facilitar a coleta local de dados de famílias, registrando informações essenciais como quantidade de membros e localização geográfica (latitude e longitude). O sistema permite que os dados coletados sejam exportados para uma planilha, possibilitando análises e tomadas de decisão mais eficientes.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="https://drive.google.com/file/d/1TsTYVsWJ00g8jR21cSjAk8WqXG9ldkdH/view?usp=drivesdk" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-4">SIGWEB - ITINGA</h3>
+                    <div class="carousel">
+                        <div><img src="assets/sigweb1.png" alt="sigweb 1" class="rounded-lg"></div>
+                        <div><img src="assets/sigweb2.png" alt="sigweb 2" class="rounded-lg"></div>
+                        <div><img src="assets/sigweb3.png" alt="sigweb 3" class="rounded-lg"></div>
+                        <div><img src="assets/sigweb4.png" alt="sigweb 4" class="rounded-lg"></div>
+                    </div>
+                    <p class="mt-3">Sistemas de Informação Geográfica para Web (SIG Web)</p>
+                    <p class="descricao-completa hidden">O SIGWEB Itinga é um sistema de informação geográfica desenvolvido para visualização e análise de dados geoespaciais da região de Itinga. Ele permite a interação com mapas dinâmicos, exibição de camadas geográficas, consulta de dados em tabelas e análise de informações relevantes para planejamento e gestão territorial.</p>
+                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
+                    <a href="http://sigwebitinga.s3-website.us-east-2.amazonaws.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
+                </div>
+                
+               
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-6 mt-6">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center text-white">
+                Linguagens e Tecnologias
+            </h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 mt-6 justify-items-center">
+                
+                <!-- Python -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
+                         alt="Python" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">Python</p>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+                         alt="JavaScript" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">JavaScript</p>
+                </div>
+                
+                <!-- HTML -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+                         alt="HTML" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">HTML</p>
+                </div>
+                
+                <!-- CSS -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
+                         alt="CSS" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">CSS</p>
+                </div>
+                
+                <!-- React -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+                         alt="React" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">React</p>
+                </div>
+                
+                <!-- Electron -->
+                <div class="text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" 
+                         alt="Electron" class="w-16 h-16 mx-auto">
+                    <p class="mt-2 text-gray-300">Electron</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="max-w-6xl mx-auto p-6 mt-6">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center">Contato</h2>
+            <p class="text-center text-gray-300 mt-4">Entre em contato comigo através dos canais abaixo:</p>
+            <div class="flex flex-wrap justify-center gap-6 mt-6">
+                
+                <!-- Botão de E-mail -->
+                <a href="igor.dev89898@gmail.com" class="flex items-center space-x-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" class="w-6 h-6">
+                    <span>Email</span>
+                </a>
+    
+                <!-- Botão de WhatsApp -->
+                <a href="https://wa.me/5586998553437" target="_blank" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-lg shadow-md transition">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="w-6 h-6">
+                    <span>WhatsApp</span>
+                </a>
+    
+                <!-- Botão do LinkedIn -->
+                <a href="www.linkedin.com/in/francisco-igor-34657533b" target="_blank" class="flex items-center space-x-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-lg shadow-md transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6">
+                    <span>LinkedIn</span>
+                </a>
+    
+            </div>
+        </div>
+    </section>
+        
+
+    <footer class="text-center p-6 mt-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg">
+        © 2025 - Francisco Igor Silva Santos
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
