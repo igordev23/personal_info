@@ -4,233 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igor Santos - Portfólio</title>
+    <meta name="description" content="Igor Santos, desenvolvedor Full Stack com agentes de IA (LLMs) em produção. TypeScript, React, Node.js e React Native.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <style>
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .seta { transform: rotate(90deg); }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-10 px-6 text-center shadow-lg">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide drop-shadow-lg">
-                Igor Santos
-            </h1>
-            <p class="mt-3 text-lg sm:text-xl font-medium text-gray-200">
-                Desenvolvedor de Software | Automação | Tecnologia & Inovação
-            </p>
+
+    <!-- Topo: quem sou, o que faço, como falar comigo -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-10 px-6 shadow-lg">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <img src="assets/perfil.jpg" alt="Foto de Igor Santos" class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-white shadow-lg">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide drop-shadow-lg">Igor Santos</h1>
+                <p class="mt-2 text-lg sm:text-xl font-medium text-gray-100">Desenvolvedor Full Stack · Agentes de IA (LLMs)</p>
+                <p class="mt-3 text-gray-200 max-w-2xl">
+                    Coloco IA em produção. Na 12min fui o principal desenvolvedor de um backoffice editorial com agentes de LLM, usado pela equipe todos os dias. TypeScript de ponta a ponta, apps em React Native e, quando o problema pede, C em sistemas embarcados.
+                </p>
+                <p class="mt-2 text-sm text-gray-200">Aberto a vagas Full Stack, Mobile ou de IA aplicada · remoto, híbrido ou realocação</p>
+                <div class="mt-5 flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="assets/curriculo-igor-santos.pdf" download class="bg-white text-indigo-700 font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition">Baixar currículo (PDF)</a>
+                    <a href="https://www.linkedin.com/in/igorsantos-dev" target="_blank" rel="noopener" class="bg-blue-900/60 hover:bg-blue-900 px-4 py-2 rounded-lg transition">LinkedIn</a>
+                    <a href="https://github.com/igordev23" target="_blank" rel="noopener" class="bg-blue-900/60 hover:bg-blue-900 px-4 py-2 rounded-lg transition">GitHub</a>
+                    <a href="mailto:igor.dev89898@gmail.com" class="bg-blue-900/60 hover:bg-blue-900 px-4 py-2 rounded-lg transition">E-mail</a>
+                </div>
+            </div>
         </div>
     </header>
-    
-    
+
+    <main>
+    <!-- Destaques: 4 projetos, cada um com o estudo de caso aberto sob demanda -->
+    <section class="max-w-5xl mx-auto p-6 mt-4">
+        <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2">Destaques</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+
+            <!-- 12min -->
+            <article class="bg-gray-800 p-6 rounded-lg shadow-lg md:col-span-2">
+                <p class="text-sm text-indigo-400 font-semibold">12min · ago/2026 – out/2026</p>
+                <h3 class="text-xl font-semibold text-white mt-1">Backoffice editorial com agentes de IA</h3>
+                <p class="mt-3 text-gray-300">
+                    Sistema que ajuda a equipe editorial a transformar livros em microbooks, com texto, narração e capa, em português, inglês e espanhol. Do PDF do livro até a publicação no app, em produção desde ago/2026.
+                </p>
+                <ol class="mt-4 flex flex-wrap gap-2 text-sm" aria-label="Etapas da cadeia de agentes">
+                    <li class="bg-gray-700 px-3 py-1 rounded">outline</li>
+                    <li class="bg-gray-700 px-3 py-1 rounded">brief</li>
+                    <li class="bg-gray-700 px-3 py-1 rounded">rascunho ⇄ juiz</li>
+                    <li class="bg-gray-700 px-3 py-1 rounded">narração</li>
+                    <li class="bg-gray-700 px-3 py-1 rounded">capa</li>
+                    <li class="bg-gray-700 px-3 py-1 rounded">publicação</li>
+                </ol>
+                <p class="mt-3 text-sm text-gray-400">TypeScript · Bun · Hono · React 19 · TanStack Query · Tailwind · PostgreSQL · Redis · Docker · Anthropic · Gemini · ElevenLabs</p>
+                <details class="mt-4">
+                    <summary class="text-blue-400 font-medium"><span class="seta inline-block transition-transform">▸</span> Como foi</summary>
+                    <div class="mt-3 space-y-3 text-gray-300 leading-relaxed">
+                        <p><strong class="text-white">Contexto.</strong> A equipe editorial precisava produzir mais conteúdo, em três idiomas, sem perder a qualidade e sem publicar nada sensível sem revisão.</p>
+                        <p><strong class="text-white">Meu papel.</strong> Fui o principal desenvolvedor do sistema, trabalhando junto com o time e com a equipe editorial que usava a ferramenta todo dia.</p>
+                        <p><strong class="text-white">Decisões.</strong></p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Cadeia de agentes em etapas, com prompts versionados, em vez de um prompt único: cada etapa fica testável e fácil de ajustar.</li>
+                            <li>Um LLM como juiz revisando o rascunho de outro. O que o juiz marca como sensível (política, economia, polêmica, celebridades) vai para revisão humana.</li>
+                            <li>Narração por IA (ElevenLabs) com léxico de pronúncia que o próprio editor edita, sem depender de desenvolvedor.</li>
+                            <li>Painel de entregas e gastos da operação de IA, e a API do "livro do dia" no app principal (Ruby).</li>
+                        </ul>
+                        <p><strong class="text-white">O que aprendi.</strong></p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Colocar IA em produção é muito mais do que chamar uma API. A maior parte do trabalho é entender quando a IA acerta, quando erra e quando uma pessoa precisa revisar.</li>
+                            <li>Ouvir quem usa o sistema todo dia ensina mais do que qualquer documentação. Boa parte das melhorias veio dessas conversas.</li>
+                            <li>Testar com casos reais antes de dar algo como pronto.</li>
+                        </ul>
+                        <p class="text-sm text-gray-400">Sistema interno: sem telas públicas.</p>
+                    </div>
+                </details>
+            </article>
+
+            <!-- NomeBr -->
+            <article class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col">
+                <div class="flex items-center gap-4">
+                    <img src="assets/nomebr-icon.jpg" alt="Ícone do app NomeBr" class="w-16 h-16 rounded-xl">
+                    <div>
+                        <p class="text-sm text-indigo-400 font-semibold">App mobile · Google Play</p>
+                        <h3 class="text-xl font-semibold text-white">NomeBr</h3>
+                    </div>
+                </div>
+                <p class="mt-3 text-gray-300">App para explorar os nomes do Brasil com dados do IBGE: descubra nomes únicos e populares.</p>
+                <p class="mt-3 text-sm text-gray-400">React Native · Expo · TypeScript · MVVM · AdMob</p>
+                <details class="mt-4">
+                    <summary class="text-blue-400 font-medium"><span class="seta inline-block transition-transform">▸</span> Como foi</summary>
+                    <div class="mt-3 space-y-3 text-gray-300 leading-relaxed">
+                        <p><strong class="text-white">Meu papel.</strong> Projeto pessoal, feito do zero até a publicação na Play Store.</p>
+                        <p><strong class="text-white">Decisões.</strong> Arquitetura MVVM para separar a lógica das telas, dados do IBGE pré-filtrados num JSON que vai junto com o app e monetização com AdMob.</p>
+                        <p><strong class="text-white">O que aprendi.</strong> Publicar um app vai além do código: revisão da loja, política de privacidade, anúncios e atualização de versão fazem parte do produto.</p>
+                    </div>
+                </details>
+                <div class="mt-auto pt-4 flex gap-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.avantech.nomebr" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Google Play</a>
+                    <a href="https://github.com/igordev23/Bank_names_mobile" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Código</a>
+                </div>
+            </article>
+
+            <!-- WhatsApp MCP -->
+            <article class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col">
+                <p class="text-sm text-indigo-400 font-semibold">Open source · IA</p>
+                <h3 class="text-xl font-semibold text-white mt-1">WhatsApp MCP local</h3>
+                <p class="mt-3 text-gray-300">Tornei funcional um servidor MCP open source de WhatsApp que tinha parado e adicionei transcrição local de áudio com whisper.cpp.</p>
+                <p class="mt-3 text-sm text-gray-400">Go · Python · SQLite · whisper.cpp · MCP</p>
+                <details class="mt-4">
+                    <summary class="text-blue-400 font-medium"><span class="seta inline-block transition-transform">▸</span> Como foi</summary>
+                    <div class="mt-3 space-y-3 text-gray-300 leading-relaxed">
+                        <p><strong class="text-white">Contexto.</strong> O servidor recebia erro 405 ao conectar e 403 em toda mídia.</p>
+                        <p><strong class="text-white">O bug mais difícil.</strong> Áudios trocavam de mensagem sem nenhum erro no log: o nome do arquivo vinha do horário (<code class="bg-gray-700 px-1 rounded">time.Now()</code>), e a sincronização baixa dezenas de áudios no mesmo segundo. Todos acabavam apontando para o primeiro arquivo. Passei a nomear pelo ID da mensagem.</p>
+                        <p><strong class="text-white">O que aprendi.</strong> Bug silencioso é o pior bug. Só dei como resolvido depois de conferir que cada áudio tinha hash e transcrição diferentes.</p>
+                    </div>
+                </details>
+                <div class="mt-auto pt-4">
+                    <a href="https://github.com/igordev23/whatsapp-mcp-fixes" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Código</a>
+                </div>
+            </article>
+
+            <!-- Vexa -->
+            <article class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col md:col-span-2">
+                <p class="text-sm text-indigo-400 font-semibold">Open source · Depuração</p>
+                <h3 class="text-xl font-semibold text-white mt-1">Bot de transcrição do Google Meet (Vexa)</h3>
+                <p class="mt-3 text-gray-300">Encontrei a causa raiz de um bug que impedia o bot do Vexa de entrar logado no Meet, provei com experimento controlado e corrigi. Também fiz a transcrição em tempo real rodar só em CPU, sem GPU.</p>
+                <p class="mt-3 text-sm text-gray-400">TypeScript · Docker · Chromium · Whisper</p>
+                <details class="mt-4">
+                    <summary class="text-blue-400 font-medium"><span class="seta inline-block transition-transform">▸</span> Como foi</summary>
+                    <div class="mt-3 space-y-3 text-gray-300 leading-relaxed">
+                        <p><strong class="text-white">Contexto.</strong> O bot autenticado caía sempre como "sessão ausente", mesmo com o login salvo.</p>
+                        <p><strong class="text-white">Processo.</strong> Em vez de mexer em várias coisas ao mesmo tempo, mudei uma variável por vez até isolar a causa: o navegador subia em modo anônimo (<code class="bg-gray-700 px-1 rounded">--incognito</code>) e descartava a sessão salva.</p>
+                        <p><strong class="text-white">Resultado.</strong> Bot entrando logado e transcrevendo a reunião ao vivo, rodando em máquina sem GPU.</p>
+                    </div>
+                </details>
+                <div class="mt-auto pt-4">
+                    <a href="https://github.com/igordev23/vexa-meet-authenticated-bot" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Código</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Competências -->
     <section class="max-w-5xl mx-auto p-6">
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center md:items-start">
-            
-            <!-- Espaço para a foto (Responsivo) -->
-            <div class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center mb-6 md:mb-0 md:mr-8">
-                <img src="assets/perfil.jpg" alt="Foto de Igor Santos" class="w-full h-full object-cover">
-            </div>
-    
-            <!-- Texto sobre você -->
-            <div class="text-gray-300 text-center md:text-left">
-                <h2 class="text-3xl font-semibold border-b-2 border-gray-600 pb-2 text-white">Sobre Mim</h2>
-                <p class="mt-4 leading-relaxed">
-                    Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonado por tecnologia e inovação. Minha experiência abrange desenvolvimento de software, bancos de dados e automação de processos, sempre buscando soluções eficientes e otimizadas.
-                </p>
-                <p class="mt-4 font-semibold text-lg text-indigo-400">Minhas principais habilidades:</p>
-                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-200">
-                    <li><strong>Linguagens de Programação:</strong> Python, JavaScript, C# (em desenvolvimento).</li>
-                    <li><strong>Desenvolvimento Web:</strong> HTML, CSS, React.</li>
-                    <li><strong>Banco de Dados:</strong> PostgreSQL, SQL Server.</li>
-                    <li><strong>Modelagem de Sistemas:</strong> UML, análise orientada a objetos.</li>
-                    <li><strong>Automação e Chatbots:</strong> Criação de bots para redes sociais e WhatsApp.</li>
-                </ul>
-                <p class="mt-4">
-                    Atualmente, desenvolvo projetos que unem tecnologia e automação, proporcionando soluções inovadoras para usuários e empresas. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e expandir meu conhecimento.
-                </p>
-            </div>
-    
-        </div>
+        <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2">Competências</h2>
+        <dl class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300">
+            <div class="bg-gray-800 p-4 rounded-lg"><dt class="font-semibold text-white">Linguagens</dt><dd class="mt-1">TypeScript, JavaScript, Python, C, Go</dd></div>
+            <div class="bg-gray-800 p-4 rounded-lg"><dt class="font-semibold text-white">Front-end e mobile</dt><dd class="mt-1">React, React Native, Expo, TanStack Query, Tailwind</dd></div>
+            <div class="bg-gray-800 p-4 rounded-lg"><dt class="font-semibold text-white">Back-end e dados</dt><dd class="mt-1">Node.js, Bun, Hono, APIs REST, PostgreSQL, Redis, filas de jobs, Docker</dd></div>
+            <div class="bg-gray-800 p-4 rounded-lg"><dt class="font-semibold text-white">IA</dt><dd class="mt-1">Agentes LLM (Anthropic, Gemini), engenharia de prompt, LLM como juiz, text-to-speech, Whisper, MCP</dd></div>
+        </dl>
     </section>
-    
-    <section class="max-w-6xl mx-auto p-6 mt-6">
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center">Projetos</h2>
-            
-            <!-- Grade Responsiva -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">Chat Code</h3>
 
-                    <div class="carousel">
-                        <div><img src="assets/chatcode1.png" alt="Chat Code 1" class="rounded-lg"></div>
-                        <div><img src="assets/chatcode2.png" alt="Chat Code 2" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Chat de bate-papo online para programadores.</p>
-                    <p class="descricao-completa hidden">O ChatCode é uma plataforma web de bate-papo online para programadores onde os usuários podem conversar, compartilhar ideias e colaborar em tempo real. O diferencial é a presença de um bot com Inteligência Artificial integrado ao chat, capaz de ajudar na resolução de dúvidas e até mesmo de executar códigos JavaScript ou TypeScript diretamente no chat, tornando a experiência mais dinâmica e educativa, ideal para programadores iniciantes.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="https://chatcode-frontend.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
-                
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">Cardápio Online</h3>
-                    <div class="carousel">
-                        <div><img src="assets/cardapio1.png" alt="Cardápio 1" class="rounded-lg"></div>
-                        <div><img src="assets/cardapio2.png" alt="Cardápio 2" class="rounded-lg"></div>
-                        <div><img src="assets/cardapio3.png" alt="Cardápio 3" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Cardápio online de pizzaria com carrinho e pedido via WhatsApp.</p>
-                    <p class="descricao-completa hidden">O Cardápio Online de Pizzaria é uma plataforma web que permite aos usuários selecionar seus itens de pedido (pizzas, bebidas, acompanhamentos) de forma prática e intuitiva, com a opção de finalizar o pedido e ser redirecionado automaticamente para o WhatsApp para concluir a compra. Ideal para quem deseja uma experiência de pedido rápida e sem complicação, diretamente com o atendimento da pizzaria.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="https://pizzaria-modelo.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
-                
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">Jogo Web de Enigmas</h3>
-                    <div class="carousel">
-                        <div><img src="assets/enigma1.png" alt="Jogo Web 1" class="rounded-lg"></div>
-                        <div><img src="assets/enigma2.png" alt="Jogo Web 2" class="rounded-lg"></div>
-                        <div><img src="assets/enigma3.png" alt="Jogo Web 3" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Jogo de resolução de enigmas.</p>
-                    <p class="descricao-completa hidden">O Jogo de Enigmas é uma plataforma web onde os usuários podem criar e compartilhar enigmas para que outros jogadores tentem resolvê-los. Perfeito para brincadeiras de caça ao tesouro ao ar livre, o jogo permite que os jogadores sigam pistas e resolvam enigmas para alcançar uma chave que os levará à próxima pista ou ao "tesouro" final.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="https://tesouro.onrender.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
+    <!-- Trajetória -->
+    <section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2">Trajetória</h2>
+        <ul class="mt-4 space-y-4 text-gray-300">
+            <li class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-semibold text-white">12min App · Desenvolvedor de Sistemas</p>
+                <p class="text-sm text-gray-400">ago/2026 – out/2026</p>
+                <p class="mt-1">Backoffice editorial com agentes de IA, do PDF do livro à publicação no app.</p>
+            </li>
+            <li class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-semibold text-white">SOFTEX · Residência Tecnológica em Sistemas Embarcados</p>
+                <p class="text-sm text-gray-400">mar/2025 – mar/2026</p>
+                <p class="mt-1">Firmware em C para Raspberry Pi Pico W: UART, SPI, I2C, sensores, atuadores e aplicações via Wi-Fi.</p>
+            </li>
+            <li class="bg-gray-800 p-4 rounded-lg">
+                <p class="font-semibold text-white">IFPI · Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                <p class="text-sm text-gray-400">out/2023 – abr/2026</p>
+            </li>
+        </ul>
+    </section>
 
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">Bot IA</h3>
-                    <div class="carousel">
-                        <div><img src="assets/bot1.png" alt="Bot IA 1" class="rounded-lg"></div>
-                        <div><img src="assets/bot2.png" alt="Bot IA 2" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Bot com voz e inteligência artificial.</p>
-                    <p class="descricao-completa hidden">O ComoBot é um assistente virtual baseado em Inteligência Artificial que reconhece comandos de voz do usuário e responde em áudio em tempo real. Com uma interface intuitiva, o usuário pode simplesmente clicar e falar, permitindo interações rápidas e eficientes.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="https://cosmo-bot-axey.onrender.com" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
+    <!-- Projetos anteriores, compactos -->
+    <section class="max-w-5xl mx-auto p-6">
+        <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2">Projetos da faculdade</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <a href="https://chatcode-frontend.onrender.com/" target="_blank" rel="noopener" class="bg-gray-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-indigo-500 transition">
+                <img src="assets/chatcode1.png" alt="Tela do ChatCode" class="w-full h-32 object-cover">
+                <div class="p-3"><p class="font-semibold text-white">ChatCode</p><p class="text-sm text-gray-400">Chat para programadores com bot de IA que executa JS/TS.</p></div>
+            </a>
+            <a href="https://pizzaria-modelo.onrender.com/" target="_blank" rel="noopener" class="bg-gray-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-indigo-500 transition">
+                <img src="assets/cardapio1.png" alt="Tela do Cardápio Online" class="w-full h-32 object-cover">
+                <div class="p-3"><p class="font-semibold text-white">Cardápio Online</p><p class="text-sm text-gray-400">Pedido de pizzaria que finaliza no WhatsApp.</p></div>
+            </a>
+            <a href="https://tesouro.onrender.com/" target="_blank" rel="noopener" class="bg-gray-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-indigo-500 transition">
+                <img src="assets/enigma1.png" alt="Tela do Jogo de Enigmas" class="w-full h-32 object-cover">
+                <div class="p-3"><p class="font-semibold text-white">Jogo de Enigmas</p><p class="text-sm text-gray-400">Caça ao tesouro com enigmas criados pelos jogadores.</p></div>
+            </a>
+            <a href="https://drive.google.com/file/d/1TsTYVsWJ00g8jR21cSjAk8WqXG9ldkdH/view?usp=drivesdk" target="_blank" rel="noopener" class="bg-gray-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-indigo-500 transition">
+                <img src="assets/geocollet1.jpg" alt="Tela do GeoCollect" class="w-full h-32 object-cover">
+                <div class="p-3"><p class="font-semibold text-white">GeoCollect</p><p class="text-sm text-gray-400">App Android de coleta de dados de famílias com geolocalização.</p></div>
+            </a>
+        </div>
+        <p class="mt-3 text-sm text-gray-500">Hospedados em plano gratuito: a primeira visita pode levar até um minuto para abrir.</p>
+    </section>
 
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">GeoCollet</h3>
-                    <div class="carousel">
-                        <div><img src="assets/geocollet1.jpg" alt="GeoCollet 1" class="rounded-lg"></div>
-                        <div><img src="assets/geocollet2.jpg" alt="GeoCollet 2" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Aplicativo Android para coleta de dados.</p>
-                    <p class="descricao-completa hidden">O GeoCollect é um aplicativo Android desenvolvido para facilitar a coleta local de dados de famílias, registrando informações essenciais como quantidade de membros e localização geográfica (latitude e longitude). O sistema permite que os dados coletados sejam exportados para uma planilha, possibilitando análises e tomadas de decisão mais eficientes.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="https://drive.google.com/file/d/1TsTYVsWJ00g8jR21cSjAk8WqXG9ldkdH/view?usp=drivesdk" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-white mb-4">SIGWEB - ITINGA</h3>
-                    <div class="carousel">
-                        <div><img src="assets/sigweb1.png" alt="sigweb 1" class="rounded-lg"></div>
-                        <div><img src="assets/sigweb2.png" alt="sigweb 2" class="rounded-lg"></div>
-                        <div><img src="assets/sigweb3.png" alt="sigweb 3" class="rounded-lg"></div>
-                        <div><img src="assets/sigweb4.png" alt="sigweb 4" class="rounded-lg"></div>
-                    </div>
-                    <p class="mt-3">Sistemas de Informação Geográfica para Web (SIG Web)</p>
-                    <p class="descricao-completa hidden">O SIGWEB Itinga é um sistema de informação geográfica desenvolvido para visualização e análise de dados geoespaciais da região de Itinga. Ele permite a interação com mapas dinâmicos, exibição de camadas geográficas, consulta de dados em tabelas e análise de informações relevantes para planejamento e gestão territorial.</p>
-                    <button class="toggle-button text-blue-400 mt-2 block">Saiba mais</button>
-                    <a href="http://sigwebitinga.s3-website.us-east-2.amazonaws.com/" class="text-blue-400 mt-2 block">Acessar projeto</a>
-                </div>
-                
-               
-                
-
+    <!-- Contato -->
+    <section class="max-w-5xl mx-auto p-6">
+        <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-2xl font-semibold">Vamos conversar?</h2>
+            <p class="text-gray-300 mt-2">Procuro vaga Full Stack, Mobile ou de IA aplicada.</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-5">
+                <a href="mailto:igor.dev89898@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md transition">igor.dev89898@gmail.com</a>
+                <a href="https://wa.me/5586998553437" target="_blank" rel="noopener" class="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg shadow-md transition">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/igorsantos-dev" target="_blank" rel="noopener" class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-lg shadow-md transition">LinkedIn</a>
+                <a href="assets/curriculo-igor-santos.pdf" download class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-3 rounded-lg shadow-md transition">Currículo (PDF)</a>
             </div>
         </div>
     </section>
-
-    <section class="max-w-6xl mx-auto p-6 mt-6">
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center text-white">
-                Linguagens e Tecnologias
-            </h2>
-            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 mt-6 justify-items-center">
-                
-                <!-- Python -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
-                         alt="Python" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">Python</p>
-                </div>
-                
-                <!-- JavaScript -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
-                         alt="JavaScript" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">JavaScript</p>
-                </div>
-                
-                <!-- HTML -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
-                         alt="HTML" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">HTML</p>
-                </div>
-                
-                <!-- CSS -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
-                         alt="CSS" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">CSS</p>
-                </div>
-                
-                <!-- React -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
-                         alt="React" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">React</p>
-                </div>
-                
-                <!-- Electron -->
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" 
-                         alt="Electron" class="w-16 h-16 mx-auto">
-                    <p class="mt-2 text-gray-300">Electron</p>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="max-w-6xl mx-auto p-6 mt-6">
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6">
-            <h2 class="text-2xl font-semibold border-b border-gray-600 pb-2 text-center">Contato</h2>
-            <p class="text-center text-gray-300 mt-4">Entre em contato comigo através dos canais abaixo:</p>
-            <div class="flex flex-wrap justify-center gap-6 mt-6">
-                
-                <!-- Botão de E-mail -->
-                <a href="igor.dev89898@gmail.com" class="flex items-center space-x-2 bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md transition">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" class="w-6 h-6">
-                    <span>Email</span>
-                </a>
-    
-                <!-- Botão de WhatsApp -->
-                <a href="https://wa.me/5586998553437" target="_blank" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-lg shadow-md transition">
-                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="w-6 h-6">
-                    <span>WhatsApp</span>
-                </a>
-    
-                <!-- Botão do LinkedIn -->
-                <a href="https://www.linkedin.com/in/igorsantos-dev" target="_blank" class="flex items-center space-x-2 bg-blue-700 hover:bg-blue-800 text-white px-5 py-3 rounded-lg shadow-md transition">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6">
-                    <span>LinkedIn</span>
-                </a>
-    
-            </div>
-        </div>
-    </section>
-        
+    </main>
 
     <footer class="text-center p-6 mt-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg">
         © 2026 - Igor Santos
     </footer>
-
-    
-    <script src="js/main.js"></script>
 </body>
 </html>
